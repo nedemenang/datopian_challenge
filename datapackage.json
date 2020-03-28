@@ -1,0 +1,49 @@
+{
+  "description": "Daily and monthly natural gas prices",
+  "keywords": [
+    "Natural Gas",
+    "Prices"
+  ],
+  "name": "daily-and-monthly-natural-gas",
+  "resources": [
+    {
+      "name": "daily-natural-gas",
+      "path": "daily_gas_prices.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "string"
+          },
+          {
+            "name": "Price",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "monthly-natural-gas",
+      "path": "monthly_gas_prices.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "string"
+          },
+          {
+            "name": "Price",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "U.S. Energy Information Administration",
+      "path": "https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm",
+      "title": "Natural gas"
+    }
+  ]
+}
