@@ -21,6 +21,8 @@ Run: `virtualenv venv --python=python3.7` in project directory to install a pyth
 
 Run: `source venv/bin/activate` to activate virtual environment
 
+Run: `pip3 install -r requirements.txt` to install all requirements
+
 ## Run script
 
 Run: `python get_prices.py`
